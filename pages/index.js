@@ -1,15 +1,11 @@
 import {server} from '../config'
-import Head from 'next/head'
 
 import ArticleList from '../components/ArticleList'
 
 export default function Home({articles}) {
   return (
     <div>
-      <Head>
-        <title>WebDev Newz</title>
-      </Head>
-
+      
       <ArticleList articles={articles} />
     </div>
   )
